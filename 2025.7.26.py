@@ -21,4 +21,5 @@ for i in range(m):
     sum3n/=3
     if abs(sum2n-sum3n)<=0.5:
         k+=1
-print(k/m)  # Output the probability
+print(k/m)
+print(7/15)                  # Output the probability
