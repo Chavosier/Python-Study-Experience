@@ -20,9 +20,9 @@ while (R_pos:=l.find(')'))!=-1:
     L_pos=R_pos-l[:R_pos][::-1].find('(')-1
     l=l[:L_pos]+split((split(l[L_pos:R_pos+1], '*', '/')),'+','-')[1:-1]+l[R_pos+1:]
 print(l.replace('a','+').replace('b','-').replace('c','*').replace('d','/'))
-
+#以运算逻辑顺序转换中缀表达式为后缀表达式
 '''
-dic = {'+': 'a', '-': 'b', '*': 'c', '/': 'd'}
+dic = {'+': 'a', '-': 'b', '*': 'c', '/': 'd'}#转换字典
 
 def find(y):
     lst = [(len(y) if (v := y.find(c)) == -1 else v) for c in '()*+/-']

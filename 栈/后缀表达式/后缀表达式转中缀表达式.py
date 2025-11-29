@@ -1,4 +1,5 @@
 l=list(input().split());sta=[]
+#sta中的元素都有两个状态，1代表该元素外层有加减法，2代表该元素外层有乘除法
 for i in l:
     if '0'<=i[0]<='9':
         sta.append([i,False,False])
@@ -19,3 +20,4 @@ for i in l:
                 y[1],y[2]=False,False
             sta.append([x[0]+i+y[0],False,True])
 print(sta[0][0])
+#后缀表达式很好地表现了运算顺序，代码与计算时类似

@@ -23,6 +23,9 @@ Limitation
 1s, 1024KiB for each test case.
 '''
 def Checkcouple(x):
+    '''
+    检查括号是否匹配
+    '''
     flag_checkcouple=True
     sta=[];top=-1
     for i in x:
@@ -40,6 +43,10 @@ def Checkcouple(x):
         return False
 
 def drasplit(y,dra):
+    '''
+    按照运算符分割表达式
+    输出两个列表：分割后的表达式列表和运算符列表
+    '''
     y_splited=[];y_dra=[]
     j=0
     for i in range(len(y)):
@@ -50,18 +57,18 @@ def drasplit(y,dra):
     y_splited.append(y[j:])
     return y_splited,y_dra
 def Convert(l):
-    l1_splited,l1_dra=drasplit(l,'+-')
+    l1_splited,l1_dra=drasplit(l,'+-')#先按+-分割
     l2_splitedsum,l2_drasum=[],[]
-    for k in l1_splited:
+    for k in l1_splited:#再按*/分割
         l2_splited,l2_dra=drasplit(k,'*/')
         l2_splitedsum.append(l2_splited)
         l2_drasum.append(l2_dra)
     for m in range(len(l2_splitedsum)):
         for n in range(len(l2_splitedsum[m])):
-            if l2_splitedsum[m][n][0]=='(':
+            if l2_splitedsum[m][n][0]=='(':#去掉括号
                 l2_splitedsum[m][n]=Convert(l2_splitedsum[m][n][1:-1])
     resultsum=''
-    for a in range(len(l2_splitedsum)):
+    for a in range(len(l2_splitedsum)):#组合结果，组合运算符
         result=l2_splitedsum[a][0]+' '
         for b in range(len(l2_drasum[a])):
             result+=l2_splitedsum[a][b+1]+' '+l2_drasum[a][b]+' '
