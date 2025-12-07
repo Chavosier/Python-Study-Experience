@@ -44,45 +44,43 @@ I,6,I,7,I,3,I,11,Q,O,Q,O,Q,I,4,I,9,Q,I,17
 5
 I,7,I,3,I,2,I,17,O,O,Q,O,Q,O,Q,I,17,Q
 '''
-n = int(input())
-d = list(input().split(','))
-top = -1
-sta = []
-ans=''
-f=False
+Maxn = int(input())
+sta=[None]*Maxn
+top=-1
+s1=input().split(',')
+res=""
+flag=False
+
 i=0
-qq=''
-while i != len(d):
-    if d[i] == 'I':
-        if top==n-1:
-            qq='ERR full!'
-            f=True
-            break
-        sta.append(d[i+1])
-        top+=1
-        i+=1
-    elif d[i] == 'O':
-        if top==-1:
-            qq='ERR empty!'
-            f=True
-            break
-        tt=sta.pop(-1)
-        top-=1
-        ans+=str(tt)+','
-    else:
-        if top==-1:
-            ans+='None!,'
+while i<len(s1):
+    if s1[i]=='I':
+        if top<Maxn-1:
+            top+=1
+            if top==0:
+                sta[top]=[int(s1[i+1]),int(s1[i+1])]
+            else:
+                sta[top]=[int(s1[i+1]),min(int(s1[i+1]),sta[top-1][1])]
+            i+=2
         else:
-            a=top
-            min=10**3
-            while a!=-1:
-                if min>int(sta[a]):
-                    min=int(sta[a])
-                    t=a
-                a-=1
-            ans += sta[t] + ','
-    i+=1
-if not f:
-    print(ans[:-1]+qq)
+            res+="ERR full!"
+            flag=True
+            break
+    elif s1[i]=='O':
+        if top>=0:
+            res+=str(sta[top][0])+","
+            top-=1
+            i+=1
+        else:
+            res+="ERR empty!"
+            flag=True
+            break
+    elif s1[i]=='Q':
+        if top>=0:
+            res+=str(sta[top][1])+","
+        else:
+            res+="None!,"
+        i+=1
+if not flag:
+    print(res[:-1])
 else:
-    print(ans+qq)
+    print(res)
