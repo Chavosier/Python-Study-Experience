@@ -22,6 +22,7 @@ Samples
 Limitation
 1s, 1024KiB for each test case.
 '''
+# by Meurcolt
 def Checkcouple(x):
     '''
     检查括号是否匹配

@@ -30,3 +30,13 @@ Samples:
 输出数据 1:
 5
 """
+n=int(input());sum=0
+l=[int(input()) for i in range(n)]
+flush=[max(l)+1]
+for i in range(n):
+    k=0;cur=l[i]
+    while flush[k]>cur:
+        k+=1
+    flush=[cur]+flush[k:]
+    sum+=len(flush)-2
+print(sum)
