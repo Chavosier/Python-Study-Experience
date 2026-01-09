@@ -26,3 +26,26 @@ Samples
 输出数据 1
 Yes
 '''
+import sys
+data=[]
+for line in sys.stdin.readlines():
+    x,y=map(int,line.split())
+    if x!=y:
+        data.append([x,1,y])
+        data.append([y,2,x])
+data=sorted(data,key=lambda x:[x[0],-x[1],-x[2]])
+# print(data)
+sta=[]
+i=0
+while i< len(data):
+    if data[i][1]==1:
+        sta.append(data[i])
+    elif len(sta)!=0 and data[i][2]==sta[-1][0]:
+        sta.pop()
+    elif data[i][0]==data[i][2]:
+        i+=1
+    else:
+        print('No')
+        exit()
+    i+=1
+print('Yes')

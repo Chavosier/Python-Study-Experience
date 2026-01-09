@@ -13,3 +13,19 @@ ABCDE
 ABDEC
 提示
 '''
+l1=input();l2=input()
+def tra(s,l2):
+    ans=''
+    for i in l2:
+        if i in s:
+            ans+=i
+    return ans
+def pre(l1,l2):
+    root=l2[0]
+    k=l1.find(root)
+    print(root,end='')
+    if k!=0:
+        pre(l1[:k],tra(l1[:k],l2))
+    if k!=len(l1)-1:
+        pre(l1[k+1:],tra(l1[k+1:],l2))
+pre(l1,l2)
