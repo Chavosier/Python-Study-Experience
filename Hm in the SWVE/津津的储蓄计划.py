@@ -76,4 +76,4 @@ for i in range(12):
         k=k//100*100
         mum+=k
         mon-=k+bu
-print((mum*1.2+mon)//1)
+print(int(mum*1.2+mon))
