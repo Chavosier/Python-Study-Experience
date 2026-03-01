@@ -1,0 +1,10 @@
+{
+  "showRibbon": true,
+  "accentColor": "#3fabee",
+  "showViewHeader": true,
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "nativeMenus": false,
+  "textFontFamily": "Adobe Caslon Pro,Californian FB,Centaur",
+  "baseFontSize": 19
+}
