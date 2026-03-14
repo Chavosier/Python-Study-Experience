@@ -11,12 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "vscode-editor",
-              "state": {
-                "file": "Sorting and Searching/3-查找排序/mergeSort.py"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "mergeSort"
+              "title": "新标签页"
             }
           }
         ]
@@ -59,7 +57,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
@@ -190,15 +188,15 @@
               "type": "calendar",
               "state": {},
               "pinned": true,
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 294.5,
+    "width": 470.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -210,51 +208,49 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "homepage:Open homepage": false,
-      "vscode-editor:新建代码文件": false
+      "homepage:Open homepage": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Sorting and Searching/3-查找排序/insertionSort.py",
-    "Sorting and Searching/3-查找排序/bubbleSort.py",
-    "Sorting and Searching/3-查找排序/binarySearch.py",
-    "Sorting and Searching/3-查找排序/shellSort.py",
-    "Sorting and Searching/3-查找排序/sequentialSearch.py",
-    "Sorting and Searching/3-查找排序/selectionSort.py",
-    "递归与递推/递归/背包问题.py",
-    "递归与递推/递推/Pell数列.py",
-    "递归与递推/递推/极值问题.py",
-    "递归与递推/递推/火车站.py",
-    "递归与递推/递推/猴子摘桃.py",
-    "HOMEPAGE.canvas",
-    "MAKESHIFT NOTE.md",
-    "Thoughts/Thoughts.md",
-    "Thoughts/小说创作灵感集锦.md",
-    "Thoughts/辩证思维.md",
-    "Thoughts/老师的回话/老师的回话.md",
-    "SeniorHighShoolStudy/Math/圆锥曲线/直线定点与斜率定值.md",
-    "SeniorHighShoolStudy/SeniorHighShoolStudy.md",
-    "MEMO.md",
-    "Tips.md",
-    "Others/Something Devided Difficultly/自制力.md",
-    "Others/Something Devided Difficultly/编程.md",
-    "Thoughts/老师的回话/语文老师.md",
-    "Journals/2026/January ~ February/2026-02-20.md",
     "Journals/2026/January ~ February/2026-02-07.md",
     "Journals/2026/January ~ February/2026-02-01.md",
     "Journals/2026/January ~ February/2026-01-09.md",
     "Journals/2026/January ~ February/2026-02-13.md",
     "Journals/2026/January ~ February/2026-02-15.md",
     "Journals/2026/January ~ February/2026-02-14.md",
+    "Journals/2026/January ~ February/2026-02-20.md",
     "Journals/2026/January ~ February/2026-02-19.md",
     "Journals/2026/January ~ February/2026-02-16.md",
     "Journals/2026/January ~ February/2026-02-18.md",
+    "HOMEPAGE.canvas",
+    "Tips.md",
+    "MEMO.md",
+    "Thoughts/Thoughts.md",
     "SeniorHighShoolStudy/Sacred Seat Proclamation.md",
     "Journals/2026/2026.md",
+    "Journals/2026/January ~ February",
     "Journals/2025/木工工具箱制作.md",
+    "Journals/2025/September ~ December/2025-09-06.md",
+    "Journals/2025/2025.md",
+    "Journals/2025/September ~ December",
+    "Journals/2025/August/2025-08-08.md",
+    "Journals/2025/August",
+    "SeniorHighShoolStudy/Physics/电路分析与洛伦兹力.md",
+    "SeniorHighShoolStudy/Physics/配速法.md",
+    "SeniorHighShoolStudy/Physics/非纯电阻路端电压.md",
+    "SeniorHighShoolStudy/Physics/洛伦兹力.md",
+    "SeniorHighShoolStudy/Physics/测电阻中的误差分析.md",
+    "SeniorHighShoolStudy/Math/最接近点.md",
+    "Thoughts/老师的回话/老师的回话.base",
+    "Thoughts/老师的回话",
+    "pictures_OP",
+    "pictures",
+    "SeniorHighShoolStudy/Math/圆锥曲线",
     "未命名.canvas",
+    "SeniorHighShoolStudy/未命名.base",
     "SeniorHighShoolStudy/Physics/pictures/PixPin_2025-08-09_17-39-17.png",
+    "Plans 1",
     "SeniorHighShoolStudy/[O]Physics/pictures_OP/PixPin_2025-08-22_14-54-30.png",
     "SeniorHighShoolStudy/Physics/pictures/PixPin_2025-09-30_23-47-51.png",
     "SeniorHighShoolStudy/Physics/pictures/PixPin_2025-09-30_23-36-08.png",
