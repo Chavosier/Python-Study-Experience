@@ -38,3 +38,17 @@ limit=int(input())
 n=int(input());l=[]
 for i in range(n):
     l.append(int(input()))
+s=0
+
+L=0;R=n-1
+l.sort()
+l=l[::-1]
+while L<R:
+    if l[L]+l[R]<=limit:
+        L+=1;R-=1
+    else:
+        L+=1
+    s+=1
+if L==R:
+    s+=1
+print(s)
