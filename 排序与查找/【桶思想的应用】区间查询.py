@@ -23,3 +23,25 @@ Samples
 11 12 12 14 18
 5
 '''
+l_helper=list(map(int,input().split()))
+a,b=map(int,input().split())
+l=[]
+for i in range(len(l_helper)):
+    if a<=l_helper[i]<=b:
+        l.append(l_helper[i])
+n=len(l)
+
+i=0
+while i<n-1:
+    k=i;i=n
+    for j in range(n-1,k,-1):
+        if l[j]<l[j-1]:
+            l[j],l[j-1]=l[j-1],l[j]
+            i=j
+if n==0:
+    print(-1)
+    exit()
+for i in range(n-1):
+    print(l[i],end=' ')
+print(l[n-1])
+print(n)

@@ -25,42 +25,30 @@ Samples
 2
 1 10
 12 18
-
 '''
-def Print(y):
-    for i in range(len(y)):
-        print(y[i])
-
-
 n=int(input())
 l=[]
+m=0
 for i in range(n):
     t=list(map(int,input().split()))
+    m=max(m,t[1])
     l.append(t)
 
-i=0
-while i<n-1:
-    k=i;i=n
-    for j in range(n-1,k,-1):
-        if l[j][0]<l[j-1][0]:
-            l[j],l[j-1]=l[j-1],l[j]
-            i=j
+Ha=[0]*(m+3)
+for i in range(n):
+    for j in range(l[i][0],l[i][1]):#其实是在n+0.5位置上标记一个1，表示这个位置被占用
+        Ha[j]=1
 
-ans=[]
-i=1
-start=l[0][0]
-last=l[0][1]
-while i<=n-1:
-    if l[i][0]<=last:
-        last=max(l[i][1],last)
-    else:
-        ans.append(str(start)+' '+str(last))
-        start=l[i][0]
-        last = l[i][1]
-    i+=1
-t=str(start)+' '+str(last)
-if t not in ans:
-    ans.append(t)
-# print(ans)
-print(len(ans))
-Print(ans)
+answer=[]
+i=0
+while i<len(Ha):
+    if Ha[i]==1:
+        j=i
+        while Ha[j]==1:#在创建Ha时多留几位0，以免越界
+            j+=1
+        answer.append([i, j])
+        i=j
+    else: i+=1
+print(len(answer))
+for i in range(len(answer)):
+    print(answer[i][0],answer[i][1])
