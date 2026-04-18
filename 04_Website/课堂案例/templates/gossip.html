@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天</title>
+</head>
+<body>
+    <div class="container">
+        <h1><img src="static/robot.png" />{{id}}{{robot_msg}}</h1>
+        <form action="/robot" method="POST">    <!--表单内容传给action的地址-->
+            输入聊天内容：<input type="text" name="msg" value="">  <!--聊天的输入框-->
+            <input type="submit" name="submit" value="提交">  <!--提交的按钮-->
+        </form>
+    </div>
+</body>
+</html>
