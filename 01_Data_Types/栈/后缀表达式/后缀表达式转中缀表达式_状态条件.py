@@ -1,3 +1,7 @@
+'''
+Solution
+用True,False代表状态
+'''
 l=list(input().split());sta=[]
 #sta中的元素都有两个状态，1代表该元素外层有加减法，2代表该元素外层有乘除法
 for i in l:

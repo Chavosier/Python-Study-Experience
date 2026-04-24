@@ -1,3 +1,7 @@
+'''
+Solution
+Crazily use function 'find'
+'''
 dic={'+':'a','-':'b','*':'c','/':'d'}
 def find(y):
     list = [(len(y) if (v := y.find(c)) == -1 else v) for c in '()*+/-']

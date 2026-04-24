@@ -21,8 +21,12 @@ Samples
 37 24 5 318 - * 200 / +
 Limitation
 1s, 1024KiB for each test case.
+
+Solution
+采用分离与重组方法
+by Meurcolt
 '''
-# by Meurcolt
+
 def Checkcouple(x):
     '''
     检查括号是否匹配

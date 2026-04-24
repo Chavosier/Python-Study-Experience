@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "87acfbd20e6fc9df",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "c52e4aa57e22b6dc",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "Makeshift Code.py"
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Makeshift Code"
             }
           }
         ]
@@ -44,7 +42,7 @@
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b6024b72667983d",
@@ -87,6 +86,7 @@
       {
         "id": "577fb8d5878dd673",
         "type": "tabs",
+        "dimension": 73.89033942558747,
         "children": [
           {
             "id": "90a3e1de04c62257",
@@ -174,15 +174,26 @@
               "state": {},
               "pinned": true,
               "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "8f3006942ff35945",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "74a7697d90faab9c",
         "type": "tabs",
+        "dimension": 26.109660574412537,
         "children": [
           {
             "id": "4d588645e2310904",
@@ -200,27 +211,38 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5,
-    "collapsed": true
+    "width": 470.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "bases:新建数据库": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "homepage:Open homepage": false,
-      "vscode-editor:Create Code File": false
+      "vscode-editor:Create Code File": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c52e4aa57e22b6dc",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "99_White Elephant/11111111.py",
+    "98_Homework/The Shortest Winter Vacation Ever/最大连续升序.py",
+    "98_Homework/The Shortest Winter Vacation Ever/校门外的树.py",
+    "98_Homework/The Shortest Winter Vacation Ever/数据合并.py",
+    "98_Homework/The Shortest Winter Vacation Ever/求最长子串.py",
+    "98_Homework/The Shortest Winter Vacation Ever/均分纸牌.py",
+    "98_Homework/The Shortest Winter Vacation Ever/津津的储蓄计划.py",
+    "98_Homework/The Shortest Winter Vacation Ever/笨小猴.py",
+    "98_Homework/The Shortest Winter Vacation Ever/猴子选大王（队列）.py",
+    "98_Homework/The Shortest Winter Vacation Ever/二分查找.py",
+    "03_Topics/pandas库/p-1-2.py",
+    "01_Data_Types/队列/PixPin_2025-11-22_01-36-51.png",
+    "04_Website/课堂案例/aiml/README.md",
     "README.md",
-    "01_Data_Types/数组/猴子选大王.py",
-    "Makeshift Code.py",
     "Journals/2026/January ~ February/2026-02-07.md",
     "Journals/2026/January ~ February/2026-02-01.md",
     "Journals/2026/January ~ February/2026-01-09.md",
@@ -237,24 +259,14 @@
     "Thoughts/Thoughts.md",
     "SeniorHighShoolStudy/Sacred Seat Proclamation.md",
     "Journals/2026/2026.md",
-    "Journals/2026/January ~ February",
     "Journals/2025/木工工具箱制作.md",
     "Journals/2025/September ~ December/2025-09-06.md",
     "Journals/2025/2025.md",
-    "Journals/2025/September ~ December",
     "Journals/2025/August/2025-08-08.md",
-    "Journals/2025/August",
     "SeniorHighShoolStudy/Physics/电路分析与洛伦兹力.md",
     "SeniorHighShoolStudy/Physics/配速法.md",
     "SeniorHighShoolStudy/Physics/非纯电阻路端电压.md",
     "SeniorHighShoolStudy/Physics/洛伦兹力.md",
-    "SeniorHighShoolStudy/Physics/测电阻中的误差分析.md",
-    "SeniorHighShoolStudy/Math/最接近点.md",
-    "Thoughts/老师的回话/老师的回话.base",
-    "Thoughts/老师的回话",
-    "pictures_OP",
-    "pictures",
-    "SeniorHighShoolStudy/Math/圆锥曲线",
     "未命名.canvas",
     "SeniorHighShoolStudy/Physics/pictures/PixPin_2025-08-09_17-39-17.png",
     "SeniorHighShoolStudy/[O]Physics/pictures_OP/PixPin_2025-08-22_14-54-30.png",

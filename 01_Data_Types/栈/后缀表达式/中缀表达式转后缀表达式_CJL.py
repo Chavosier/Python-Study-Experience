@@ -1,3 +1,7 @@
+'''
+Solution
+by CJL
+'''
 def F(data):
     z=[];c=[]
     for i in range(len(data)):
