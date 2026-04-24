@@ -11,12 +11,14 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "vscode-editor",
+              "type": "markdown",
               "state": {
-                "file": "Makeshift Code.py"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Makeshift Code"
+              "title": "README"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b6024b72667983d",
@@ -86,7 +87,7 @@
       {
         "id": "577fb8d5878dd673",
         "type": "tabs",
-        "dimension": 73.89033942558747,
+        "dimension": 48.04177545691906,
         "children": [
           {
             "id": "90a3e1de04c62257",
@@ -193,7 +194,7 @@
       {
         "id": "74a7697d90faab9c",
         "type": "tabs",
-        "dimension": 26.109660574412537,
+        "dimension": 51.958224543080945,
         "children": [
           {
             "id": "4d588645e2310904",
@@ -229,6 +230,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "03_Topics/加密与解密/密钥加密.py",
+    "03_Topics/猜想与证明/一元乐享.py",
+    "99_White Elephant/seacern.py",
+    "Makeshift Code.py",
     "99_White Elephant/11111111.py",
     "98_Homework/The Shortest Winter Vacation Ever/最大连续升序.py",
     "98_Homework/The Shortest Winter Vacation Ever/校门外的树.py",
@@ -236,10 +241,6 @@
     "98_Homework/The Shortest Winter Vacation Ever/求最长子串.py",
     "98_Homework/The Shortest Winter Vacation Ever/均分纸牌.py",
     "98_Homework/The Shortest Winter Vacation Ever/津津的储蓄计划.py",
-    "98_Homework/The Shortest Winter Vacation Ever/笨小猴.py",
-    "98_Homework/The Shortest Winter Vacation Ever/猴子选大王（队列）.py",
-    "98_Homework/The Shortest Winter Vacation Ever/二分查找.py",
-    "03_Topics/pandas库/p-1-2.py",
     "01_Data_Types/队列/PixPin_2025-11-22_01-36-51.png",
     "04_Website/课堂案例/aiml/README.md",
     "README.md",
