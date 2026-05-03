@@ -189,7 +189,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "74a7697d90faab9c",
@@ -228,8 +228,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "395a077e83ef926c",
   "lastOpenFiles": [
+    "README.md",
     "03_Topics/加密与解密/密钥加密.py",
     "03_Topics/猜想与证明/一元乐享.py",
     "99_White Elephant/seacern.py",
@@ -240,10 +241,8 @@
     "98_Homework/The Shortest Winter Vacation Ever/数据合并.py",
     "98_Homework/The Shortest Winter Vacation Ever/求最长子串.py",
     "98_Homework/The Shortest Winter Vacation Ever/均分纸牌.py",
-    "98_Homework/The Shortest Winter Vacation Ever/津津的储蓄计划.py",
     "01_Data_Types/队列/PixPin_2025-11-22_01-36-51.png",
     "04_Website/课堂案例/aiml/README.md",
-    "README.md",
     "Journals/2026/January ~ February/2026-02-07.md",
     "Journals/2026/January ~ February/2026-02-01.md",
     "Journals/2026/January ~ February/2026-01-09.md",
