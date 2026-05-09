@@ -1,0 +1,23 @@
+<!doctype html>
+<body><meta http-equiv="refresh" content="60"><body>
+<style>
+#center{ margin-right: auto; 
+margin-left: auto;
+background-color: #eff7ff; 
+width: 600px; 
+height: 500px; 
+vertical-align: left;
+overflow-y: scroll;
+overfolw-x: scroll
+}
+</style>
+<title>温度监测系统</title>
+<h1 align="center">室内温度监测系统</h1>
+<h2 align="center">当前温度：{{temp}}°C</h2>
+<h2 align="center"><a href='/'>刷新</a>历史记录数据列表：</h2>
+<div id="center" style='border:2px solid #96c2f1'>
+ 温度     记录时间<br>
+ {% for row in data %}
+ {{row[2]}}°C  {{row[3]}}<br>
+ {% endfor %}
+</div>
