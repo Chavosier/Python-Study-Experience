@@ -1,0 +1,97 @@
+import random
+
+def Print(skip):
+    for i in range(len(skip)):
+        for j in range(len(skip[i])):
+            print(skip[i][j], end=' ')
+        print()
+    for i in range(len(skip)):
+        x=head
+        while x!=-1:
+            print(skip[i][x][0], end=' ')
+            x=skip[i][x][2]
+        print()
+#create template
+books=[1,3,5,7,9,11]
+
+def Build(books):
+    global layer
+    skip=[];t=[i for i in books];layer=0
+    flag=True
+    while flag:
+        layer+=1
+        if t!=[]:
+            skip.append(t)
+        flag=False
+        t=[books[0]]
+        for i in skip[layer-1][1:]:
+            if random.randint(0,1)==1:
+                t.append(i);flag=True
+        if flag and t==skip[layer-1]:
+            layer-=1;t=[]
+    for i in range(layer):
+        for j in range(len(skip[i])-1):
+            skip[i][j]=[skip[i][j],-1,j+1]
+        skip[i][j+1]=[skip[i][j+1],-1,-1]
+    for i in range(layer-1,0,-1):
+        for j in range(len(skip[i])):
+            for k in range(len(skip[i-1])):
+                if skip[i-1][k][0]==skip[i][j][0]:
+                    skip[i][j][1]=k;break
+    return skip
+def Search(skip,target):
+    global positionkey
+    positionkey = []
+    q=p=head;i=layer-1
+    while i>=0:
+        while q!=-1 and skip[i][q][0]<target:
+            p=q;q=skip[i][q][2]
+        positionkey.append([p, q])
+        if i!=0: q=p=skip[i][p][1]
+        i-=1
+    positionkey=positionkey[::-1]
+    if skip[i+1][q][0]==target:
+        return q
+    else:
+        return -1
+def Add(skip,data):
+    if data<skip[0][head][0]:
+        tt=skip[0][head][0]
+        for i in range(layer):
+            skip[i][head][0]=data
+        data=tt
+    Search(skip,data)
+    keys=[1]+[(random.randint(0,1)) for _ in range(layer-1)]
+    for i in range(layer):
+        if keys[i]==1:
+            skip[i].append([data,-1,positionkey[i][1]])
+            if i!=0: skip[i][-1][1]=len(skip[i-1])-1
+            skip[i][positionkey[i][0]][2]=len(skip[i])-1
+        else:
+            break
+    return skip
+def Del(skip,data):
+    flag=False
+    if data==skip[0][head][0]: # this part is similar to the Add function
+        tt=skip[0][skip[0][head][2]][0]
+        for i in range(layer):
+            skip[i][head][0]=tt-1 # to make sure that the head of the skip list is always the smallest element, and then consider the ord head as the new data to be deleted from the skip list.
+        flag=True
+        data=tt
+    Search(skip,data)
+    for i in range(layer):
+        if positionkey[i][1]!=-1 and skip[i][positionkey[i][1]][0]==data: # do Del operation in each layer according to the positionkey
+            skip[i][positionkey[i][0]][2]=skip[i][positionkey[i][1]][2]
+        else:
+            break
+    if flag:
+        for i in range(layer):
+            skip[i][head][0]=skip[i][head][0]+1 # back
+    return skip
+skip=Build(books)
+skip=[[[1, -1, 1], [3, -1, 2], [5, -1, 3], [7, -1, 4], [9, -1, 5], [11, -1, -1]], [[1, 0, 1], [3, 1, 2], [9, 4, 3], [11, 5, -1]], [[1, 0, 1], [9, 2, -1]]]
+head=0
+layer=len(skip)
+Print(skip)
+skip=Del(skip,1)
+Print(skip)
