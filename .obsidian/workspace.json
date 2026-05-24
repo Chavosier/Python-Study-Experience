@@ -11,14 +11,12 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "01_Data_Types/链表/跳跃表.py"
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "跳跃表"
             }
           }
         ]
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b6024b72667983d",
@@ -87,7 +86,7 @@
       {
         "id": "577fb8d5878dd673",
         "type": "tabs",
-        "dimension": 48.04177545691906,
+        "dimension": 48.041775456919055,
         "children": [
           {
             "id": "90a3e1de04c62257",
@@ -169,11 +168,9 @@
           {
             "id": "395a077e83ef926c",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "graph",
               "state": {},
-              "pinned": true,
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
@@ -212,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 470.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,8 +226,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "395a077e83ef926c",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01_Data_Types/链表/错题管理.py",
     "README.md",
     "03_Topics/加密与解密/密钥加密.py",
     "03_Topics/猜想与证明/一元乐享.py",
