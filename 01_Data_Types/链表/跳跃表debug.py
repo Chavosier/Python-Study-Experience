@@ -12,7 +12,10 @@ def Print(skip):
             x=skip[i][x][2]
         print()
 #create template
-books=[1,3,5,7,9,11]
+# books=[1,3,5,7,9,11]
+# Maxn=10;books=[0]*Maxn;books[0]=3
+# for i in range(1,Maxn):
+#     books[i]=books[i-1]+random.randint(1,5)
 
 def Build(books):
     global layer

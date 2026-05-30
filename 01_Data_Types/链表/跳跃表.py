@@ -1,8 +1,6 @@
 import random
 '''
 skip list is a data structure that allows fast search within an ordered sequence of elements. 
-It uses multiple layers to skip over many elements at once, thus reducing the time complexity of search operations. Each layer is essentially a linked list that contains a subset of the elements from the previous layer, allowing for efficient traversal and search.
-The skip list is built by randomly deciding which elements to include in each layer, with the probability of including an element in the next layer being 1/2. This results in a logarithmic number of layers on average, which allows for efficient search, insertion, and deletion operations.
 '''
 head=0
 # create template
