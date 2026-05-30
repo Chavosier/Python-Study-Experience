@@ -1,6 +1,7 @@
 import random
 '''
 skip list is a data structure that allows fast search within an ordered sequence of elements. 
+Abandon 'build' fuction.
 '''
 head=0
 skip=[[[float('-inf'),-1,-1]]]
