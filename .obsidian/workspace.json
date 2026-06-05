@@ -11,12 +11,10 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "vscode-editor",
-              "state": {
-                "file": "01_Data_Types/链表/跳跃表.py"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "跳跃表"
+              "title": "New tab"
             }
           }
         ]
@@ -76,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2b6024b72667983d",
@@ -209,8 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5,
-    "collapsed": true
+    "width": 470.5
   },
   "left-ribbon": {
     "hiddenItems": {

@@ -117,3 +117,8 @@ Print(skip)
 print(Search(skip,8))
 skip=Del(skip,6)
 Print(skip)
+# -inf 1 2 6 8 9 
+# -inf 1 2 6 9 
+# -inf 6 9 
+# -inf 1 2 6 9 
+# -inf 6 9 
