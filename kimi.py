@@ -15,7 +15,7 @@ client = OpenAI(
     base_url="https://api.moonshot.cn/v1"
 )
 
-def ask_kimi(prompt, model="kimi-k2.5"):
+def ask_kimi(prompt, model="kimi-k2.6"):
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
@@ -24,5 +24,7 @@ def ask_kimi(prompt, model="kimi-k2.5"):
     return response.choices[0].message.content
 
 # EXAMPLE
-answer = ask_kimi("introduce yourself")
+question="Na[Al(OH)4]溶于水有没有沉淀？"
+
+answer = ask_kimi(question)
 print(answer)
